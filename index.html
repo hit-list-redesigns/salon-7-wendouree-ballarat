@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon 7 Wendouree | Cuts, colour and fades at Stockland Wendouree, Ballarat</title>
+<meta name="description" content="Salon 7 at Shop 53, Stockland Wendouree. Cuts from $25, blonding, balayage, vivid colour and skin fades. See prices, today's hours and book online.">
+<meta name="theme-color" content="#2A1233">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://salon7au.com/wp-content/uploads/2024/01/360123877_750553410405417_1835862627725158877_n.jpg">
+<style>
+:root{
+  --platinum:#E9E5EC;
+  --pearl:#F5F3F6;
+  --plum:#2A1233;
+  --plum-deep:#1E0C25;
+  --plum-mid:#5B2E68;
+  --ink:#221027;
+  --ink-soft:#57465C;
+  --brass:#CDAA6E;
+  --lilac:#C9B3D6;
+  --groove:rgba(42,18,51,.42);
+  --groove-on-plum:rgba(205,170,110,.55);
+  --display:"Gloock", "Hanken Grotesk", Georgia, serif;
+  --text:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gutter:clamp(16px, 4vw, 56px);
+  --max:1360px;
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --shadow:0 18px 40px -18px rgba(30,12,37,.35);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--plum-mid) var(--platinum);-webkit-text-size-adjust:100%}
+html::-webkit-scrollbar{width:12px}
+html::-webkit-scrollbar-track{background:var(--platinum)}
+html::-webkit-scrollbar-thumb{background:var(--plum-mid);border:3px solid var(--platinum)}
+body{margin:0;background:var(--platinum);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.55;font-kerning:normal;overflow-x:hidden}
+::selection{background:var(--plum);color:var(--platinum)}
+.on-plum ::selection{background:var(--brass);color:var(--plum)}
+img{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--plum-mid);outline-offset:3px}
+.on-plum :focus-visible{outline-color:var(--brass)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.icon{width:1.15em;height:1.15em;flex:none;fill:currentColor}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* carve: three parallel grooves, the page's structural line */
+.carve{display:block;height:9px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;position:relative;color:var(--groove)}
+.carve::after{content:"";position:absolute;left:0;right:0;top:3px;border-top:1px solid currentColor}
+.on-plum .carve{color:var(--groove-on-plum)}
+
+/* seam: the fade, lines thickening and crowding toward the next field */
+.seam{display:block;position:relative;height:15px;border-top:1px solid currentColor;border-bottom:3px solid currentColor;color:var(--groove)}
+.seam::before,.seam::after{content:"";position:absolute;left:0;right:0;border-top:1.5px solid currentColor}
+.seam::before{top:5px}.seam::after{top:9px;border-top-width:2px}
+.on-plum .seam{color:var(--brass);border-bottom-width:2px}
+
+/* buttons */
+.btn{--bg:var(--plum);--fg:var(--platinum);display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:0 1.5rem;border:1px solid var(--bg);background:var(--bg);color:var(--fg);font:600 1rem/1 var(--text);letter-spacing:.01em;text-decoration:none;cursor:pointer;white-space:nowrap;position:relative;transition:background .25s var(--ease-out),color .25s var(--ease-out),transform .15s var(--ease-out)}
+.btn::after{content:"";position:absolute;inset:4px;border:1px solid currentColor;opacity:.28;pointer-events:none}
+.btn:hover{--bg:var(--plum-mid)}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{--bg:transparent;--fg:var(--plum);border-color:var(--plum)}
+.btn--ghost:hover{--bg:var(--plum);--fg:var(--platinum)}
+.on-plum .btn{--bg:var(--platinum);--fg:var(--plum)}
+.on-plum .btn:hover{--bg:var(--lilac)}
+.on-plum .btn--ghost{--bg:transparent;--fg:var(--platinum);border-color:var(--lilac)}
+.on-plum .btn--ghost:hover{--bg:var(--platinum);--fg:var(--plum)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--platinum)}
+.top .wrap{display:flex;align-items:center;gap:2rem;height:72px}
+.top .carve{margin:0}
+.brand{display:inline-flex;align-items:flex-end;gap:.18em;text-decoration:none;font:400 1.9rem/1 var(--display);letter-spacing:-.02em;color:var(--plum)}
+.brand svg{height:.92em;width:auto;margin-bottom:.02em}
+.nav{display:flex;gap:1.75rem;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:.98rem;padding:.4rem 0;border-bottom:1px solid transparent}
+.nav a:hover{border-bottom-color:currentColor}
+.top__call{display:inline-flex;align-items:center;gap:.45em;font-weight:600;text-decoration:none;font-size:.98rem}
+.top .btn{min-height:44px;padding:0 1.15rem}
+
+/* hero */
+.hero{padding:clamp(28px,4vw,56px) 0 clamp(40px,5vw,72px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:stretch}
+.hero__copy{display:flex;flex-direction:column;justify-content:space-between;gap:2.25rem;min-width:0}
+.hero h1{font-size:clamp(3.1rem,7.4vw,6rem);color:var(--plum);letter-spacing:-.03em;line-height:.96}
+.hero h1 span{display:block}
+.hero__lede{font-size:clamp(1.08rem,1.4vw,1.25rem);max-width:34ch;color:var(--ink-soft);margin-top:1.5rem}
+.hero__lede strong{color:var(--ink);font-weight:600}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.billing{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;border-top:1px solid var(--plum);border-bottom:1px solid var(--plum)}
+.billing > a{display:block;padding:1rem 1.1rem 1.05rem 0;min-width:0;text-decoration:none}
+.billing > a + a{padding-left:1.1rem;border-left:1px solid var(--groove)}
+.billing .bt{display:block;font-size:.85rem;font-weight:500;color:var(--ink-soft)}
+.billing .bd{display:block;margin-top:.3rem;font:400 1.55rem/1.05 var(--display);color:var(--plum);white-space:nowrap}
+.billing .bd small{font:500 .85rem/1.3 var(--text);color:var(--ink-soft);display:block;margin-top:.3rem;white-space:normal}
+.billing > a:hover .bd{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+
+.seven{width:100%;height:auto;max-height:min(80vh,720px);display:block;margin-left:auto;overflow:visible}
+.seven .fill image{transform-origin:50% 40%}
+@media (prefers-reduced-motion:no-preference){
+  .seven .g{animation:carve 1.05s var(--ease-out) both}
+  .seven .g2{animation-delay:.14s}
+  .seven .g3{animation-delay:.28s}
+  .seven .g4{animation-delay:.42s}
+  .seven .fill{animation:reveal 1.1s var(--ease-out) .5s both}
+  .seven .fill image{animation:settle 1.8s var(--ease-out) .5s both}
+}
+@keyframes carve{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero__art{margin:0;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.hero__art figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:.9rem;text-align:right}
+
+/* section scaffolding */
+section{scroll-margin-top:80px}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.sec h2{font-size:clamp(2.4rem,5vw,4.25rem);color:var(--plum)}
+.sec__intro{max-width:52ch;color:var(--ink-soft);margin-top:1.1rem;font-size:1.1rem}
+.on-plum{background:var(--plum);color:var(--platinum)}
+.on-plum h2,.on-plum h3{color:var(--platinum)}
+.on-plum .sec__intro{color:var(--lilac)}
+
+/* work */
+.work__head{display:flex;flex-direction:column;margin-bottom:clamp(32px,4vw,56px)}
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(200px,22vw,330px);gap:clamp(10px,1.2vw,16px);margin:0;padding:0;list-style:none}
+.gallery li{margin:0;display:flex;flex-direction:column;min-width:0}
+.gallery figure{margin:0;display:flex;flex-direction:column;height:100%}
+.gallery .ph{flex:1;min-height:0;overflow:hidden;background:var(--lilac)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease-out)}
+.gallery li:hover img{transform:scale(1.035)}
+.gallery figcaption{font-size:.88rem;font-weight:500;padding-top:.55rem;color:var(--ink-soft)}
+.g-a{grid-column:1/6;grid-row:span 2}
+.g-b{grid-column:6/10}
+.g-c{grid-column:10/13}
+.g-d{grid-column:6/9}
+.g-e{grid-column:9/13}
+.g-f{grid-column:1/5}
+.g-g{grid-column:5/9}
+.g-h{grid-column:9/13}
+.work__more{margin-top:1.75rem;display:flex;align-items:center;gap:.5rem;font-weight:600}
+
+/* offer band */
+.offer{padding:clamp(56px,7vw,96px) 0}
+.offer .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(24px,4vw,64px);align-items:center}
+.offer__frame{display:flex;flex-direction:column;gap:1.1rem}
+.offer .offer__price{font:400 clamp(4.5rem,10vw,8rem)/.9 var(--display);color:var(--platinum);letter-spacing:-.04em;white-space:nowrap;margin:0;max-width:none}
+.offer__price small{font:500 1.1rem/1 var(--text);color:var(--lilac);margin-right:.4rem;letter-spacing:0;vertical-align:.9em}
+.offer h2{font-size:clamp(1.9rem,3.2vw,2.8rem)}
+.offer p{color:var(--lilac);margin-top:.8rem;max-width:46ch}
+
+/* menu + ticket */
+.menu .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:start}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:2.25rem 0 1.5rem}
+.tab{appearance:none;background:transparent;border:1px solid var(--lilac);color:var(--platinum);font:600 .95rem/1 var(--text);padding:.85rem 1.1rem;min-height:44px;cursor:pointer;transition:background .2s var(--ease-out),color .2s var(--ease-out)}
+.tab:hover{border-color:var(--platinum)}
+.tab[aria-selected="true"]{background:var(--platinum);color:var(--plum);border-color:var(--platinum)}
+.panel[hidden]{display:none}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:22px minmax(0,1fr) auto auto;align-items:center;gap:.9rem;padding:.95rem 0}
+.row + .row{border-top:1px solid rgba(201,179,214,.18)}
+.row__mark{width:22px;height:22px;color:var(--brass);opacity:0;transform:scale(.6);transition:opacity .25s var(--ease-out),transform .35s var(--ease-out)}
+.row.is-picked .row__mark{opacity:1;transform:none}
+.row__name{font-weight:600;font-size:1.08rem;display:flex;flex-direction:column;min-width:0}
+.row__name span{font-weight:500;font-size:.88rem;color:var(--lilac);margin-top:.15rem}
+.row__price{font:400 1.7rem/1 var(--display);color:var(--platinum);white-space:nowrap}
+.row__price small{font:500 .85rem var(--text);color:var(--lilac);margin-right:.3em}
+.pick{appearance:none;min-width:104px;min-height:44px;padding:0 1rem;border:1px solid var(--lilac);background:transparent;color:var(--platinum);font:600 .92rem/1 var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:.4rem;text-decoration:none;transition:background .2s var(--ease-out),color .2s var(--ease-out),border-color .2s}
+.pick:hover{border-color:var(--platinum);background:rgba(233,229,236,.08)}
+.pick[aria-pressed="true"]{background:var(--platinum);border-color:var(--platinum);color:var(--plum)}
+.menu__note{font-size:.92rem;color:var(--lilac);margin-top:1.25rem;max-width:60ch}
+.menu__note a{color:var(--platinum);font-weight:600}
+
+.ticket{position:sticky;top:96px;background:var(--pearl);color:var(--ink);padding:clamp(22px,2.4vw,34px);box-shadow:var(--shadow)}
+.ticket .carve{margin-bottom:1.25rem}
+.ticket h3{font-size:2rem;color:var(--plum)}
+.trail{display:flex;gap:.35rem;list-style:none;margin:.9rem 0 1.4rem;padding:0;font-size:.85rem;font-weight:600;color:var(--ink-soft);flex-wrap:wrap}
+.trail li{display:flex;align-items:center;gap:.35rem}
+.trail li + li::before{content:"";width:18px;border-top:1px solid var(--groove)}
+.trail li.done{color:var(--plum)}
+.trail li.done .t-n{background:var(--plum);color:var(--platinum);border-color:var(--plum)}
+.t-n{display:inline-grid;place-items:center;width:22px;height:22px;border:1px solid var(--ink-soft);font-size:.75rem}
+.step{padding:1.1rem 0;border-top:1px solid rgba(42,18,51,.14)}
+.step h4{margin:0 0 .45rem;font:600 .95rem/1.3 var(--text);color:var(--plum)}
+.picked{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+.picked b{font:400 1.45rem/1.1 var(--display);color:var(--plum)}
+.picked .num{font:400 1.45rem/1 var(--display);color:var(--plum)}
+.picked-meta{font-size:.9rem;color:var(--ink-soft);margin-top:.2rem}
+.empty{color:var(--ink-soft);font-size:.98rem}
+.policy{margin:0;padding:0;list-style:none;font-size:.93rem;color:var(--ink-soft)}
+.policy li{padding-left:1rem;position:relative;margin:.3rem 0}
+.policy li::before{content:"";position:absolute;left:0;top:.72em;width:.45rem;border-top:1px solid var(--plum)}
+.check{display:flex;gap:.7rem;align-items:flex-start;margin-top:.9rem;font-weight:600;font-size:.95rem;cursor:pointer}
+.check input{appearance:none;flex:none;width:22px;height:22px;border:1.5px solid var(--plum);background:var(--pearl);margin:0;display:grid;place-items:center;cursor:pointer}
+.check input:checked{background:var(--plum)}
+.check input:checked::after{content:"";width:10px;height:6px;border-left:2px solid var(--platinum);border-bottom:2px solid var(--platinum);transform:rotate(-45deg) translate(1px,-1px)}
+.err{color:#8E1B3A;font-size:.9rem;font-weight:600;margin-top:.6rem}
+.err[hidden]{display:none}
+.ticket .btn{--bg:var(--plum);--fg:var(--platinum);width:100%;margin-top:.4rem}
+.ticket .btn:hover{--bg:var(--plum-mid)}
+.ticket__alt{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-top:1rem;font-size:.9rem}
+.ticket__alt a{font-weight:600;color:var(--plum)}
+
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,88px)}
+.status{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-weight:600;color:var(--plum)}
+.week{margin:2.25rem 0 0;padding:0;list-style:none}
+.day{display:grid;grid-template-columns:5.5rem minmax(0,1fr) 9.5rem;align-items:center;gap:1rem;padding:.55rem 0}
+.day__name{font-weight:600}
+.day__hrs{text-align:right;color:var(--ink-soft);font-size:.95rem;white-space:nowrap}
+.track{position:relative;height:18px;border-left:1px solid var(--groove);border-right:1px solid var(--groove)}
+.track::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px dashed var(--groove)}
+.span{position:absolute;top:3px;bottom:3px;background:var(--plum-mid);opacity:.55}
+.day.is-today{background:var(--pearl);margin:0 -.75rem;padding:.7rem .75rem}
+.day.is-today .day__name,.day.is-today .day__hrs{color:var(--plum);font-weight:700}
+.day.is-today .span{background:var(--plum);opacity:1}
+.now{position:absolute;top:-6px;bottom:-6px;border-left:2px solid var(--plum)}
+.scale{display:grid;grid-template-columns:5.5rem minmax(0,1fr) 9.5rem;gap:1rem;font-size:.78rem;color:var(--ink-soft);margin-top:.35rem}
+.scale div{display:flex;justify-content:space-between}
+.addr{background:var(--pearl);padding:32px;padding:clamp(24px,3vw,40px);align-self:start}
+.addr h3{font-size:1.9rem;color:var(--plum)}
+.addr address{font-style:normal;margin-top:.9rem;font-size:1.08rem}
+.addr .links{display:flex;flex-direction:column;gap:.35rem;margin:1.4rem 0}
+.addr .links a{display:inline-flex;align-items:center;gap:.6rem;font-weight:600;text-decoration:none;min-height:44px;color:var(--plum)}
+.addr .links a:hover span{text-decoration:underline}
+.addr p{color:var(--ink-soft);font-size:.96rem;margin-top:.7rem}
+
+/* reviews (placeholders) */
+.reviews{background:var(--pearl)}
+.reviews__rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(290px,1fr);gap:clamp(14px,2vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;margin-top:2.5rem;scrollbar-width:thin}
+.quote{scroll-snap-align:start;margin:0;display:flex;flex-direction:column;gap:1.1rem;padding:0 0 .5rem}
+.ph-tag{align-self:flex-start;font:700 .75rem/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--plum-mid);border:1px solid var(--plum-mid);padding:.4rem .55rem}
+.quote blockquote{margin:0;font:400 1.4rem/1.32 var(--display);color:var(--plum)}
+.quote figcaption{font-size:.92rem;color:var(--plum-mid);font-weight:600}
+.rating b{color:var(--plum)}
+.rating{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem;color:var(--ink-soft)}
+
+/* close */
+.close{position:relative;overflow:hidden}
+.close .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:2rem;align-items:center}
+.close h2{font-size:clamp(2.6rem,6vw,5.2rem)}
+.close p{color:var(--lilac);margin-top:1.2rem;font-size:1.12rem;max-width:44ch}
+.close .hero__ctas{margin-top:2.2rem}
+.close__seven{width:100%;max-width:380px;justify-self:end;height:auto;overflow:visible}
+.close__today{margin-top:1.5rem;font-weight:600;color:var(--platinum)}
+
+/* footer */
+.foot{background:var(--plum-deep);color:var(--lilac);padding:56px 0 110px;font-size:.95rem}
+.foot .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:2rem}
+.foot .brand{color:var(--platinum)}
+.foot a{color:var(--platinum)}
+.foot h3{font:600 .95rem/1.3 var(--text);color:var(--platinum);margin-bottom:.6rem}
+.foot p + p{margin-top:.5rem}
+.foot__social{display:flex;gap:.6rem;margin-top:1rem}
+.foot__social a{display:inline-grid;place-items:center;width:44px;height:44px;border:1px solid rgba(201,179,214,.4)}
+.foot__social .icon{width:20px;height:20px}
+
+/* dialog */
+dialog.book{padding:0;border:0;background:var(--pearl);color:var(--ink);width:min(760px,calc(100vw - 24px));height:min(900px,calc(100dvh - 24px));max-height:none;box-shadow:0 40px 90px -30px rgba(30,12,37,.6)}
+dialog.book::backdrop{background:rgba(30,12,37,.62)}
+.book__inner{display:flex;flex-direction:column;height:100%}
+.book__head{padding:16px 18px 14px 22px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.4rem 1rem;align-items:start;border-bottom:1px solid rgba(42,18,51,.14)}
+.book__head h2{font-size:1.6rem;color:var(--plum)}
+.book__hint{grid-column:1/-1;font-size:.93rem;color:var(--ink-soft)}
+.book__hint b{color:var(--plum)}
+.book__x{appearance:none;border:1px solid var(--plum);background:transparent;color:var(--plum);width:44px;height:44px;display:grid;place-items:center;cursor:pointer}
+.book__x:hover{background:var(--plum);color:var(--platinum)}
+.book__body{position:relative;flex:1;min-height:0;background:#fff}
+.book__body iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.skel{position:absolute;inset:0;padding:28px;display:flex;flex-direction:column;gap:14px;background:var(--pearl)}
+.skel i{display:block;height:18px;background:var(--platinum)}
+.skel i:nth-child(1){width:40%;height:26px}.skel i:nth-child(2){width:88%}.skel i:nth-child(3){width:76%}.skel i:nth-child(4){width:82%}
+@media (prefers-reduced-motion:no-preference){.skel i{animation:pulse 1.4s ease-in-out infinite alternate}}
+@keyframes pulse{from{opacity:.55}to{opacity:1}}
+.skel[hidden]{display:none}
+.book__foot{padding:10px 22px;font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-top:1px solid rgba(42,18,51,.14)}
+.book__foot a{font-weight:600;color:var(--plum)}
+.book__slow{position:absolute;left:28px;right:28px;bottom:28px;background:var(--pearl);border:1px solid var(--plum);padding:1rem;font-size:.95rem}
+.book__slow[hidden]{display:none}
+
+/* mobile bar */
+.mbar{display:none}
+
+/* responsive */
+@media (max-width:1100px){
+  .nav{display:none}
+  .top .wrap{gap:1rem}
+  .top__call{margin-left:auto}
+}
+@media (max-width:900px){
+  .hero .wrap,.menu .wrap,.visit .wrap,.close .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero__art{order:-1}
+  .seven{max-height:none;width:auto;height:clamp(220px,36vh,380px);margin:0 auto 0 0}
+  .hero__art figcaption{text-align:left}
+  .billing{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .billing > a:nth-child(3){padding-left:0;border-left:0}
+  .billing > a:nth-child(n+3){border-top:1px solid var(--groove)}
+  .offer .wrap{grid-template-columns:minmax(0,1fr)}
+  .ticket{position:relative;top:auto}
+  .close__seven{display:none}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(190px,52vw,340px)}
+  .gallery li{grid-column:auto;grid-row:auto}
+  .g-a{grid-column:1/-1 !important;grid-row:span 2 !important}
+  .g-h{grid-column:1/-1 !important}
+  .foot .wrap{grid-template-columns:minmax(0,1fr)}
+  .mbar{transform:translateY(110%);transition:transform .35s var(--ease-out);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--plum);box-shadow:0 -10px 30px -12px rgba(30,12,37,.5)}
+  .mbar.is-on{transform:none}
+  .mbar .btn{min-height:50px;padding:0 .8rem;font-size:.98rem}
+  .mbar .btn--call{--bg:transparent;--fg:var(--platinum);border-color:var(--lilac)}
+  .mbar__pick{grid-column:1/-1;color:var(--lilac);font-size:.85rem;display:flex;justify-content:space-between;gap:.5rem}
+  .mbar__pick[hidden]{display:none}
+  .mbar__pick b{color:var(--platinum)}
+  .top{position:relative}
+  .top .btn{display:none}
+}
+@media (min-width:901px){
+  .hero__copy{justify-content:center;gap:clamp(48px,8vh,96px)}
+}
+@media (min-width:700px) and (max-width:900px){
+  .hero__ctas{flex-wrap:nowrap}
+  .hero .tel-n{display:none}
+  .hero__ctas .btn{flex:1 1 0;max-width:200px}
+  .hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);row-gap:2.5rem}
+  .hero__copy{display:contents}
+  .hero__copy > div:first-child{grid-column:1;grid-row:1;align-self:center}
+  .hero__art{order:0;grid-column:2;grid-row:1;align-self:center}
+  .seven{width:100%;height:auto;max-height:520px;margin:0 0 0 auto}
+  .hero__art figcaption{text-align:right}
+  .hero h1{font-size:3.4rem}
+  .billing{grid-column:1/-1;grid-row:2;grid-template-columns:1.5fr 1fr 1fr 1.3fr}
+  .billing > a:nth-child(3){padding-left:1.1rem;border-left:1px solid var(--groove)}
+  .billing > a:nth-child(n+3){border-top:0}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .top .wrap{height:62px}
+  .brand{font-size:1.6rem}
+  .top__call .lbl{display:none}
+  .top__call{width:44px;height:44px;justify-content:center;border:1px solid var(--plum)}
+  .hero h1{font-size:clamp(2.7rem,12.5vw,3.4rem)}
+  .hero__ctas{flex-wrap:nowrap}
+  .hero__ctas .btn{flex:1 1 auto;padding:0 1rem}
+  .hero .tel-n{display:none}
+  .billing .bd{font-size:1.35rem}
+  .row{grid-template-columns:18px minmax(0,1fr) auto auto;gap:.6rem}
+  .row__mark{width:18px;height:18px}
+  .row .pick{min-width:78px;padding:0 .7rem}
+  .row__price{font-size:1.45rem}
+  .day{grid-template-columns:3.6rem minmax(0,1fr) 7.6rem;gap:.6rem}
+  .scale{grid-template-columns:3.6rem minmax(0,1fr) 7.6rem;gap:.6rem}
+  .day__hrs{font-size:.86rem}
+  .offer__price{font-size:5rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+  <symbol id="i-instagram-logo" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+  <symbol id="i-facebook-logo" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+  <symbol id="i-calendar-check" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"/></symbol>
+  <symbol id="i-seven" viewBox="0 0 600 800"><path d="M40 40H560V205L355 760H115L335 245H40Z"/></symbol>
+  <symbol id="i-notch" viewBox="0 0 22 22"><path d="M2 5 L11 17 L20 5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6 5 L11 12 L16 5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+</svg>
+
+<a class="sr" href="#menu">Skip to the menu and booking</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Salon 7 Wendouree, home">Salon<svg viewBox="0 0 600 800" aria-hidden="true"><use href="#i-seven" fill="currentColor"/></svg></a>
+    <nav class="nav" aria-label="Page">
+      <a href="#work">The work</a>
+      <a href="#menu">Menu &amp; prices</a>
+      <a href="#visit">Hours &amp; location</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a class="top__call" href="tel:+61353382659" aria-label="Call Salon 7 Wendouree on (03) 5338 2659"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl num">(03) 5338 2659</span></a>
+    <a class="btn" href="#menu" data-go-book>Book online</a>
+  </div>
+  <span class="carve" aria-hidden="true"></span>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <div class="hero__copy">
+        <div>
+          <h1 id="h1"><span>Sharp cuts.</span><span>Serious colour.</span></h1>
+          <p class="hero__lede">Cuts, fades, blonding and vivid colour at <strong>Salon 7, Shop 53, Stockland Wendouree.</strong> Book a cut online in three steps.</p>
+          <div class="hero__ctas">
+            <a class="btn" href="#menu" data-go-book><svg class="icon" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+            <a class="btn btn--ghost" href="tel:+61353382659" aria-label="Call (03) 5338 2659"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Call<span class="tel-n"> (03) 5338 2659</span></span></a>
+          </div>
+        </div>
+        <div class="billing">
+          <a href="#visit"><span class="bt">Open today</span><span class="bd num" data-today-hours>9am to 5:30pm<small>&nbsp;</small></span></a>
+          <a href="#menu" data-pick-id="mens" data-jump><span class="bt">Men's cut</span><span class="bd num">$40<small>30 min</small></span></a>
+          <a href="#menu" data-pick-id="trim" data-jump><span class="bt">Hair trim</span><span class="bd num">$45<small>30 min</small></span></a>
+          <a href="#special"><span class="bt">Nanoplasty special</span><span class="bd num">from $249<small>1 hr</small></span></a>
+        </div>
+      </div>
+      <figure class="hero__art">
+        <svg class="seven" viewBox="0 0 600 800" role="img" aria-labelledby="sevenT">
+          <title id="sevenT">A giant number 7 filled with a Salon 7 lilac colour, long waves photographed in the salon</title>
+          <defs><clipPath id="c7"><path d="M40 40H560V205L355 760H115L335 245H40Z"/></clipPath></defs>
+          <g fill="none" stroke-linejoin="miter" stroke-miterlimit="6"><g class="g g1"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="70"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#E9E5EC" stroke-width="68"/></g><g class="g g2"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="50"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#E9E5EC" stroke-width="47"/></g><g class="g g3"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="32"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#E9E5EC" stroke-width="28"/></g><g class="g g4"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="16"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#E9E5EC" stroke-width="10"/></g></g>
+          <g class="fill"><g clip-path="url(#c7)"><rect x="0" y="0" width="600" height="800" fill="#5B2E68"/><image href="https://salon7au.com/wp-content/uploads/2024/01/360123877_750553410405417_1835862627725158877_n.jpg" x="-190" y="-60" width="980" height="1060" preserveAspectRatio="xMidYMid slice"/></g></g>
+        </svg>
+        <figcaption>Lilac waves, coloured at Salon 7.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec work" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="work__head">
+        <h2 id="work-h">Straight from the chair.</h2>
+        <p class="sec__intro">Real Salon 7 colour, fades and upstyles, from the salon's own Instagram and Facebook.</p>
+      </div>
+      <ul class="gallery">
+        <li class="g-a"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/281659449_3141908059458645_3466858634133763086_n.jpg" alt="Long platinum hair toned to silver, set in loose curls" width="1440" height="1800"></div><figcaption>Platinum, toned silver</figcaption></figure></li>
+        <li class="g-b"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/244541590_2988460488136737_1598854155240638412_n.jpg" alt="Dark curls with violet and electric blue vivid colour through the lengths" width="1440" height="1478"></div><figcaption>Violet and blue vivids</figcaption></figure></li>
+        <li class="g-c"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/361624149_752168183577273_2215617865761506515_n.jpg" alt="Man with a high pompadour, faded sides and a carved part line" width="1440" height="1440"></div><figcaption>Fade with a carved part</figcaption></figure></li>
+        <li class="g-d"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/286692546_3159166344399483_4861902815632585845_n.jpg" alt="Side profile of a skin fade and beard against the salon's green wall" width="1440" height="1799"></div><figcaption>Skin fade</figcaption></figure></li>
+        <li class="g-e"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/289415533_3170060336643417_7197582608840906270_n.jpg" alt="Geometric hair pattern carved into an undercut beneath long dark hair" width="1398" height="1398"></div><figcaption>Hair pattern, carved</figcaption></figure></li>
+        <li class="g-f"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/292060266_3181081572207960_3169556773621299827_n.jpg" alt="Low bridal upstyle finished with red, pink and white roses" width="1440" height="1800"></div><figcaption>Bridal upstyle</figcaption></figure></li>
+        <li class="g-g"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/273401023_3066740343642084_3346107250113081005_n.jpg" alt="Soft honey blonde balayage in long loose waves" width="1440" height="1800"></div><figcaption>Balayage</figcaption></figure></li>
+        <li class="g-h"><figure><div class="ph"><img loading="lazy" decoding="async" src="https://salon7au.com/wp-content/uploads/2024/01/219468143_2915936745389112_4592368410585532097_n-Copy-2.jpg" alt="Long hair in bold magenta and cobalt blue sections" width="1440" height="1440"></div><figcaption>Magenta and cobalt</figcaption></figure></li>
+      </ul>
+      <a class="work__more" href="https://www.instagram.com/salon7hairbeauty/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"/></svg>More on Instagram, @salon7hairbeauty<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+  </section>
+
+  <section class="offer on-plum" id="special" aria-labelledby="offer-h">
+    <div class="wrap">
+      <div class="offer__frame"><span class="carve" aria-hidden="true"></span><p class="offer__price num"><small>from</small>$249</p><span class="carve" aria-hidden="true"></span></div>
+      <div>
+        <h2 id="offer-h">Nanoplasty, one hour, on special.</h2>
+        <p>Salon 7's price list has Nanoplasty from $300. At Wendouree it's on special, and you can book it online.</p>
+      </div>
+      <button class="btn" type="button" data-pick-id="nano" data-jump>Book the special</button>
+    </div>
+  </section>
+  <div class="seam-band on-plum" aria-hidden="true"><div class="wrap"><span class="seam"></span></div></div>
+
+  <section class="sec menu on-plum" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div>
+        <h2 id="menu-h">Choose a service. See the price first.</h2>
+        <p class="sec__intro">Prices and times from Salon 7 Wendouree's own booking system. Pick one and your booking is ready to finish.</p>
+        <div class="tabs" role="tablist" aria-label="Service groups">
+          <button class="tab" role="tab" id="t-ladies" aria-controls="p-ladies" aria-selected="true">Ladies</button>
+          <button class="tab" role="tab" id="t-men" aria-controls="p-men" aria-selected="false" tabindex="-1">Men's &amp; kids</button>
+          <button class="tab" role="tab" id="t-treat" aria-controls="p-treat" aria-selected="false" tabindex="-1">Smoothing &amp; braids</button>
+          <button class="tab" role="tab" id="t-colour" aria-controls="p-colour" aria-selected="false" tabindex="-1">Colour &amp; more</button>
+        </div>
+        <div class="panel" role="tabpanel" id="p-ladies" aria-labelledby="t-ladies"><ul class="rows" data-group="ladies"></ul></div>
+        <div class="panel" role="tabpanel" id="p-men" aria-labelledby="t-men" hidden><ul class="rows" data-group="men"></ul></div>
+        <div class="panel" role="tabpanel" id="p-treat" aria-labelledby="t-treat" hidden><ul class="rows" data-group="treat"></ul></div>
+        <div class="panel" role="tabpanel" id="p-colour" aria-labelledby="t-colour" hidden>
+          <ul class="rows" data-group="colour"></ul>
+          <p class="menu__note">Colour, foils, balayage, styling and beard work aren't on Wendouree's online menu. Call <a class="num" href="tel:+61353382659">(03) 5338 2659</a> to book. Prices from Salon 7's price list.</p>
+        </div>
+        <p class="menu__note">Weekend bookings carry a surcharge. Call to confirm the weekend price. Seniors' cuts are Tuesdays only.</p>
+      </div>
+
+      <aside class="ticket" id="ticket" aria-labelledby="ticket-h">
+        <span class="carve" aria-hidden="true"></span>
+        <h3 id="ticket-h">Your booking</h3>
+        <ol class="trail" aria-label="Booking steps">
+          <li data-trail="1"><span class="t-n">1</span>Service</li>
+          <li data-trail="2"><span class="t-n">2</span>Deposit</li>
+          <li data-trail="3"><span class="t-n">3</span>Time</li>
+        </ol>
+        <div class="step" aria-live="polite">
+          <h4>Service</h4>
+          <div data-picked-view>
+            <p class="empty">Nothing picked yet. Choose a service from the menu.</p>
+          </div>
+        </div>
+        <div class="step">
+          <h4>Deposit and changes</h4>
+          <ul class="policy">
+            <li>A 100% deposit is paid when you book online. It comes off your bill on the day.</li>
+            <li>Need to move or cancel? Give 48 hours' notice to keep your deposit.</li>
+            <li>No-shows and changes with less notice forfeit the deposit.</li>
+          </ul>
+          <label class="check"><input type="checkbox" id="ack"> I understand the deposit and 48-hour policy.</label>
+        </div>
+        <div class="step">
+          <h4>Time</h4>
+          <button class="btn" type="button" id="toTime" aria-describedby="flowErr"><svg class="icon" aria-hidden="true"><use href="#i-calendar-check"/></svg>Choose a time</button>
+          <p class="err" id="flowErr" role="alert" hidden></p>
+          <div class="ticket__alt">
+            <a href="https://www.makeonlinebooking.com/location/74835/salon7-wendouree" target="_blank" rel="noopener">Skip to the booking page</a>
+            <a class="num" href="tel:+61353382659">Or call (03) 5338 2659</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div>
+        <h2 id="visit-h">Shop 53, Stockland Wendouree.</h2>
+        <p class="status" data-status-line><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Open seven days.</span></p>
+        <ul class="week" data-week aria-label="Opening hours"></ul>
+        <div class="scale" aria-hidden="true"><span></span><div><span>8am</span><span>2pm</span><span>8pm</span></div><span></span></div>
+      </div>
+      <div class="addr">
+        <h3>Find the salon</h3>
+        <address>Shop 53, Stockland Shopping Centre<br>Wendouree VIC 3355</address>
+        <div class="links">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Salon+7+Stockland+Wendouree+VIC+3355" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg><span>Get directions</span></a>
+          <a href="tel:+61353382659"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(03) 5338 2659</span></a>
+          <a href="mailto:info@salon7au.com"><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg><span>info@salon7au.com</span></a>
+        </div>
+        <span class="carve" aria-hidden="true"></span>
+        <p>Salon 7's salons are raw, minimal and bright: around 120&nbsp;m², 15 chairs, and sofas for whoever came along with you.</p>
+        <p>Prefer your phone? Book in the Slick app too.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec reviews" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <h2 id="rev-h">What clients say.</h2>
+      <p class="rating"><span><b>Placeholder:</b> Google rating and review count go here once the salon supplies them.</span></p>
+      <div class="reviews__rail" tabindex="0" aria-label="Client reviews, placeholders">
+        <figure class="quote"><span class="carve" aria-hidden="true"></span><blockquote>“Came in with a screenshot of lilac waves and walked out with exactly that. Booked online the night before.”</blockquote><figcaption>Placeholder review. Replace with a real client's words, name and suburb.</figcaption></figure>
+        <figure class="quote"><span class="carve" aria-hidden="true"></span><blockquote>“Quick skin fade on a Saturday while the family did the shopping. Clean lines, no fuss.”</blockquote><figcaption>Placeholder review. Replace with a real client's words, name and suburb.</figcaption></figure>
+        <figure class="quote"><span class="carve" aria-hidden="true"></span><blockquote>“They sorted my brassy blonde into a cool platinum and told me how to keep it that way.”</blockquote><figcaption>Placeholder review. Replace with a real client's words, name and suburb.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam-band" aria-hidden="true" style="background:var(--pearl);padding-bottom:1px"><div class="wrap"><span class="seam"></span></div></div>
+  <section class="sec close on-plum" aria-labelledby="close-h">
+    <div class="wrap">
+      <div>
+        <h2 id="close-h">Bring the photo you've been saving.</h2>
+        <p>Book a cut, fade or smoothing online, or call the salon for colour.</p>
+        <div class="hero__ctas">
+          <a class="btn" href="#menu" data-go-book><svg class="icon" aria-hidden="true"><use href="#i-calendar-check"/></svg>Book online</a>
+          <a class="btn btn--ghost" href="tel:+61353382659" aria-label="Call (03) 5338 2659"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="num">Call<span class="tel-n"> (03) 5338 2659</span></span></a>
+        </div>
+        <p class="close__today" data-close-today>Open today 9:00am to 5:30pm.</p>
+      </div>
+      <svg class="close__seven" viewBox="0 0 600 800" role="img" aria-label="A number 7 filled with magenta and cobalt vivid colour by Salon 7">
+          <defs><clipPath id="c7close"><path d="M40 40H560V205L355 760H115L335 245H40Z"/></clipPath></defs>
+          <g fill="none" stroke-linejoin="miter" stroke-miterlimit="6"><g class="g g1"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#CDAA6E" stroke-width="70"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="68"/></g><g class="g g2"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#CDAA6E" stroke-width="50"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="47"/></g><g class="g g3"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#CDAA6E" stroke-width="32"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="28"/></g><g class="g g4"><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#CDAA6E" stroke-width="16"/><path d="M40 40H560V205L355 760H115L335 245H40Z" stroke="#2A1233" stroke-width="10"/></g></g>
+          <g class="fill"><g clip-path="url(#c7close)"><rect x="0" y="0" width="600" height="800" fill="#5B2E68"/><image href="https://salon7au.com/wp-content/uploads/2024/01/219468143_2915936745389112_4592368410585532097_n-Copy-2.jpg" x="-80" y="-30" width="760" height="860" preserveAspectRatio="xMidYMid slice"/></g></g>
+        </svg>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-plum">
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top" aria-label="Salon 7, back to top">Salon<svg viewBox="0 0 600 800" aria-hidden="true"><use href="#i-seven" fill="currentColor"/></svg></a>
+      <p style="margin-top:1rem">Shop 53, Stockland Shopping Centre, Wendouree VIC 3355</p>
+      <p><a class="num" href="tel:+61353382659">(03) 5338 2659</a> <span aria-hidden="true">/</span> <a href="mailto:info@salon7au.com">info@salon7au.com</a></p>
+      <div class="foot__social">
+        <a href="https://www.instagram.com/salon7hairbeauty/" target="_blank" rel="noopener" aria-label="Salon 7 on Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"/></svg></a>
+        <a href="https://www.facebook.com/people/Salon7-Hair-Beauty/100063522945066/" target="_blank" rel="noopener" aria-label="Salon 7 on Facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook-logo"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Monday to Thursday, 9:00am to 5:30pm</p>
+      <p>Friday, 9:00am to 7:00pm</p>
+      <p>Saturday, 9:00am to 5:00pm</p>
+      <p>Sunday, 10:00am to 4:00pm</p>
+    </div>
+    <div>
+      <h3>Salon 7 group</h3>
+      <p>Opened in Geelong's Market Square in 2015. Also in Geelong, Leopold, Armstrong Creek, Greensborough, Warrnambool and Swan View WA.</p>
+      <p style="margin-top:1rem">&copy; Salon 7. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar on-plum" role="region" aria-label="Quick booking">
+  <p class="mbar__pick" data-mbar-pick hidden><span>Picked: <b data-mbar-name></b></span><b class="num" data-mbar-price></b></p>
+  <a class="btn" href="#menu" data-mbar-book><svg class="icon" aria-hidden="true"><use href="#i-calendar-check"/></svg><span data-mbar-label>Book online</span></a>
+  <a class="btn btn--call" href="tel:+61353382659"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+</div>
+
+<dialog class="book" id="bookDlg" aria-labelledby="book-h">
+  <div class="book__inner">
+    <div class="book__head">
+      <h2 id="book-h">Pick your time</h2>
+      <button class="book__x" type="button" data-close aria-label="Close booking"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <p class="book__hint" data-hint>In the booking window below, choose your service, then a time.</p>
+    </div>
+    <div class="book__body">
+      <div class="skel" data-skel aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <p class="book__slow" data-slow hidden>The booking window is taking a while. <a href="https://www.makeonlinebooking.com/location/74835/salon7-wendouree" target="_blank" rel="noopener"><b>Open it in a new tab</b></a> or call <a class="num" href="tel:+61353382659">(03) 5338 2659</a>.</p>
+    </div>
+    <div class="book__foot">
+      <span>Secure booking by Slick for Salon 7 Wendouree</span>
+      <a href="https://www.makeonlinebooking.com/location/74835/salon7-wendouree" target="_blank" rel="noopener">Open in a new tab</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var SLICK = "https://www.makeonlinebooking.com/location/74835/salon7-wendouree";
+  var TEL = "tel:+61353382659";
+  // Ballarat online menu (Slick) plus the chain price list for call-to-book services.
+  var MENU = {
+    ladies:[
+      {id:"trim",name:"Hair Trim",time:"30 min",price:"$45",cat:"Ladies Haircuts",slick:"Hair Trim"},
+      {id:"restyle",name:"Restyle Hair Cut",time:"45 min",price:"$60",cat:"Ladies Haircuts",slick:"Restyle Hair Cut"},
+      {id:"wcb",name:"Wash, Cut & Blow Wave",time:"45 min",price:"$79",from:true,cat:"Ladies Haircuts",slick:"Wash Cut & Blow Wave (From)"},
+      {id:"girls",name:"Girls' Hair Cut",time:"15 min",price:"$35",cat:"Ladies Haircuts",slick:"Girls Hair Cut"}
+    ],
+    men:[
+      {id:"mens",name:"Men's Cut",time:"30 min",price:"$40",cat:"Men's Haircuts",slick:"Mens Cut"},
+      {id:"style",name:"Style Cut",time:"30 min",price:"$40",cat:"Men's Haircuts",slick:"Style Cut"},
+      {id:"fade",name:"Skin Fade",time:"15 min",price:"$45",cat:"Men's Haircuts",slick:"Skin Fade"},
+      {id:"buzz",name:"Buzz Cut",time:"30 min",price:"$25",cat:"Men's Haircuts",slick:"Buzz cut"},
+      {id:"boys",name:"Kids' Hair Cut (boys)",time:"30 min",price:"$35",cat:"Men's Haircuts",slick:"kid hair cut (boy)"},
+      {id:"tip",name:"Tip Cap",time:"30 min",price:"$70",cat:"Men's Haircuts",slick:"Tip cap"}
+    ],
+    treat:[
+      {id:"nano",name:"Nanoplasty Special",time:"1 hr",price:"$249",from:true,cat:"Specials",slick:"Nanoplasty Special From $249"},
+      {id:"keratin",name:"Keratin Smoothing",time:"3 hr",price:"$275",from:true,cat:"Hair Conditioning and Scalp Treatments",slick:"Keratin Smoothing (FROM)"},
+      {id:"braids",name:"2 Outside Braids",time:"30 min",price:"$35",cat:"Braids",slick:"2 Outside Braids"}
+    ],
+    colour:[
+      {name:"Regrowth Colour",price:"$119",from:true},
+      {name:"Full Colour",price:"$169",from:true},
+      {name:"Toner",price:"$89",from:true},
+      {name:"Half Head Foils",price:"$169",from:true},
+      {name:"Full Head Foils",price:"$210",from:true},
+      {name:"Balayage",price:"$250",from:true},
+      {name:"Scalp Bleach & Toner",price:"$165",from:true},
+      {name:"Full Head Bleach",price:"$180",from:true},
+      {name:"Chemical Straightening",price:"$275",from:true},
+      {name:"Wash & Blow Wave",price:"$49",from:true},
+      {name:"Formal Up Do",price:"$70",from:true},
+      {name:"Beard Trim",price:"$25"},
+      {name:"Beard Shave & Cut",price:"$30"},
+      {name:"Seniors' Cut, Tuesdays",price:"$30 to $35"}
+    ]
+  };
+  var byId = {};
+  Object.keys(MENU).forEach(function(g){ MENU[g].forEach(function(s){ if(s.id){ s.group=g; byId[s.id]=s; } }); });
+
+  function el(html){ var t=document.createElement("template"); t.innerHTML=html.trim(); return t.content.firstChild; }
+  function priceHTML(s){ return (s.from?'<small>from</small>':'')+s.price; }
+
+  Object.keys(MENU).forEach(function(g){
+    var ul=document.querySelector('[data-group="'+g+'"]');
+    MENU[g].forEach(function(s){
+      var li;
+      if(s.id){
+        li=el('<li class="row" data-row="'+s.id+'"><svg class="row__mark" aria-hidden="true"><use href="#i-notch"/></svg><span class="row__name">'+s.name+'<span>'+s.time+'</span></span><span class="row__price num">'+priceHTML(s)+'</span><button class="pick" type="button" aria-pressed="false" data-pick-id="'+s.id+'" aria-label="Select '+s.name+', '+(s.from?'from ':'')+s.price+'">Select</button></li>');
+      } else {
+        li=el('<li class="row"><span></span><span class="row__name">'+s.name+'<span>Call to book</span></span><span class="row__price num">'+priceHTML(s)+'</span><a class="pick" href="'+TEL+'" aria-label="Call to book '+s.name+'">Call</a></li>');
+      }
+      ul.appendChild(li);
+    });
+  });
+
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function showTab(tab,focus){
+    tabs.forEach(function(t){
+      var on=t===tab; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+    if(focus) tab.focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ showTab(t); });
+    t.addEventListener('keydown',function(e){
+      var k=e.key, n=null;
+      if(k==='ArrowRight') n=tabs[(i+1)%tabs.length];
+      if(k==='ArrowLeft') n=tabs[(i-1+tabs.length)%tabs.length];
+      if(k==='Home') n=tabs[0]; if(k==='End') n=tabs[tabs.length-1];
+      if(n){ e.preventDefault(); showTab(n,true); }
+    });
+  });
+
+  // state
+  var state={pick:null};
+  try{ var saved=localStorage.getItem('s7pick'); if(saved && byId[saved]) state.pick=saved; }catch(e){}
+  var ack=document.getElementById('ack');
+  var err=document.getElementById('flowErr');
+  var view=document.querySelector('[data-picked-view]');
+  var mPick=document.querySelector('[data-mbar-pick]');
+
+  function render(){
+    var s=state.pick && byId[state.pick];
+    document.querySelectorAll('[data-row]').forEach(function(r){ var on=s && r.getAttribute('data-row')===s.id; r.classList.toggle('is-picked',!!on); var b=r.querySelector('.pick'); b.setAttribute('aria-pressed',!!on); b.textContent=on?'Selected':'Select'; });
+    if(s){
+      view.innerHTML='<div class="picked"><b>'+s.name+'</b><span class="num">'+(s.from?'<small style="font:500 .85rem var(--text);color:var(--ink-soft)">from </small>':'')+s.price+'</span></div><p class="picked-meta">'+s.time+'. In the booking window it is under '+s.cat+'.</p>';
+      mPick.hidden=false;
+      document.querySelector('[data-mbar-name]').textContent=s.name;
+      document.querySelector('[data-mbar-price]').textContent=(s.from?'from ':'')+s.price;
+      document.querySelector('[data-mbar-label]').textContent='Continue';
+    } else {
+      view.innerHTML='<p class="empty">Nothing picked yet. Choose a service from the menu.</p>';
+      mPick.hidden=true;
+      document.querySelector('[data-mbar-label]').textContent='Book online';
+    }
+    var t1=!!s, t2=ack.checked;
+    document.querySelector('[data-trail="1"]').classList.toggle('done',t1);
+    document.querySelector('[data-trail="2"]').classList.toggle('done',t2);
+    if(t1&&t2) err.hidden=true;
+  }
+  function pick(id,jump){
+    state.pick = (state.pick===id && !jump) ? null : id;
+    try{ state.pick ? localStorage.setItem('s7pick',state.pick) : localStorage.removeItem('s7pick'); }catch(e){}
+    render();
+    if(jump){
+      var s=byId[id]; showTab(document.getElementById('t-'+s.group));
+      var target = window.matchMedia('(max-width:900px)').matches ? document.getElementById('ticket') : document.getElementById('menu');
+      target.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto':'smooth', block:'start'});
+    }
+  }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-pick-id]');
+    if(b){ if(b.tagName==='A') e.preventDefault(); pick(b.getAttribute('data-pick-id'), b.hasAttribute('data-jump')); }
+  });
+  ack.addEventListener('change',render);
+  if(state.pick){ showTab(document.getElementById('t-'+byId[state.pick].group)); }
+  render();
+
+  // mobile continue: go to the ticket when a service is picked
+  document.querySelector('[data-mbar-book]').addEventListener('click',function(e){
+    if(state.pick){ e.preventDefault(); document.getElementById('ticket').scrollIntoView({behavior:'smooth',block:'start'}); }
+  });
+
+  // mobile bar: shows once the hero's own Book/Call pair is out of view
+  var mbar=document.querySelector('.mbar'), heroCtas=document.querySelector('.hero__ctas');
+  if('IntersectionObserver' in window){ new IntersectionObserver(function(en){ mbar.classList.toggle('is-on', !en[0].isIntersecting); }).observe(heroCtas); } else { mbar.classList.add('is-on'); }
+
+  // dialog with the Slick booking page
+  var dlg=document.getElementById('bookDlg'), body=dlg.querySelector('.book__body'), skel=dlg.querySelector('[data-skel]'), slow=dlg.querySelector('[data-slow]'), hint=dlg.querySelector('[data-hint]');
+  var frame=null, slowT=null;
+  function openBooking(){
+    var s=byId[state.pick];
+    hint.innerHTML='Open <b>'+s.cat+'</b>, add <b>'+s.slick+'</b>, then choose your time and pay the deposit.';
+    if(!frame){
+      frame=document.createElement('iframe');
+      frame.title='Salon 7 Wendouree online booking';
+      frame.addEventListener('load',function(){ skel.hidden=true; slow.hidden=true; clearTimeout(slowT); });
+      frame.src=SLICK;
+      body.appendChild(frame);
+      slowT=setTimeout(function(){ slow.hidden=false; },12000);
+    }
+    if(typeof dlg.showModal==='function'){ dlg.showModal(); } else { window.open(SLICK,'_blank','noopener'); }
+  }
+  document.getElementById('toTime').addEventListener('click',function(){
+    if(!state.pick){ err.textContent='Pick a service from the menu first.'; err.hidden=false; showTab(tabs[0]); return; }
+    if(!ack.checked){ err.textContent='Tick the deposit box to continue.'; err.hidden=false; ack.focus(); return; }
+    err.hidden=true;
+    document.querySelector('[data-trail="3"]').classList.add('done');
+    openBooking();
+  });
+  dlg.querySelector('[data-close]').addEventListener('click',function(){ dlg.close(); });
+  dlg.addEventListener('click',function(e){ if(e.target===dlg) dlg.close(); });
+
+  // hours, in Ballarat time
+  var HOURS={0:[10,16],1:[9,17.5],2:[9,17.5],3:[9,17.5],4:[9,17.5],5:[9,19],6:[9,17]};
+  var NAMES=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var SHORT=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  function fmt(h){ var hr=Math.floor(h), m=Math.round((h-hr)*60), ap=hr>=12?'pm':'am', h12=hr%12||12; return h12+(m?':'+(m<10?'0':'')+m:'')+ap; }
+  function now(){
+    try{
+      var p=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Melbourne',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+      var o={}; p.forEach(function(x){o[x.type]=x.value;});
+      return {d:SHORT.indexOf(o.weekday), h:(+o.hour)+(+o.minute)/60};
+    }catch(e){ var d=new Date(); return {d:d.getDay(),h:d.getHours()+d.getMinutes()/60}; }
+  }
+  var n=now(), today=HOURS[n.d], open=n.h>=today[0]&&n.h<today[1];
+  var status;
+  if(open){ status='Open now, closes '+fmt(today[1]); }
+  else if(n.h<today[0]){ status='Opens today at '+fmt(today[0]); }
+  else { var nd=(n.d+1)%7; status='Closed now. Opens '+(nd===0?'Sunday':'tomorrow')+' at '+fmt(HOURS[nd][0]); }
+  var th=document.querySelector('[data-today-hours]');
+  th.innerHTML=fmt(today[0])+' to '+fmt(today[1])+'<small>'+status+'</small>';
+  document.querySelector('[data-status-line] span').textContent=status+'.';
+  document.querySelector('[data-close-today]').textContent='Today: '+fmt(today[0])+' to '+fmt(today[1])+'. '+status+'.';
+
+  var week=document.querySelector('[data-week]'), S=8, E=20;
+  [1,2,3,4,5,6,0].forEach(function(d){
+    var h=HOURS[d], isT=d===n.d;
+    var li=el('<li class="day'+(isT?' is-today':'')+'"><span class="day__name">'+(isT?'Today':SHORT[d])+'<span class="sr"> '+NAMES[d]+'</span></span><span class="track" aria-hidden="true"><span class="span" style="left:'+((h[0]-S)/(E-S)*100)+'%;width:'+((h[1]-h[0])/(E-S)*100)+'%"></span>'+(isT&&n.h>=S&&n.h<=E?'<span class="now" style="left:'+((n.h-S)/(E-S)*100)+'%"></span>':'')+'</span><span class="day__hrs num">'+fmt(h[0])+' to '+fmt(h[1])+'</span></li>');
+    week.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>
